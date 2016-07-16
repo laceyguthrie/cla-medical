@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 
-  <title>Harp Family Institute</title>
+  <title>CLA Medical</title>
 
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/style.min.css">
@@ -24,27 +24,30 @@
   <div id="mobile-menu">
     <nav class="mobile-nav">
       <ul class="list">
-        <li><a href="/">Home</a></li>
         <li><a href="about.php">About</a></li>
-        <li><a href="experience.php">Experience</a></li>
-        <li><a href="research.php">Research</a></li>
-        <li><a href="services.php">Services</a></li>
+        <li><a href="experience.php">What We Offer</a></li>
+        <li><a href="research.php">Videos</a></li>
+        <li><a href="services.php">Events</a></li>
         <li><a href="blog.php">Blog</a></li>
-        <li><a href="media.php">Media</a></li>
       </ul>
     </nav>
   </div>
-  <div class="logo">
-    <a href="/"><img src="assets/img/logo.svg" alt="Harp Family Institute" /></a>
+  <div class="row">
+    <div class="small-12 medium-3 large-4 columns">
+      <div class="logo">
+        <a href="/"><img src="assets/img/logo.png" alt="CLA Medical" /></a>
+      </div>
+    </div>
+    <div class="small-12 medium-9 large-8 columns">
+      <nav class="desktop-nav">
+        <ul class="list list__inline">
+          <li><a href="about.php">About</a></li>
+          <li><a href="experience.php">What We Offer</a></li>
+          <li><a href="research.php">Videos</a></li>
+          <li><a href="services.php">Events</a></li>
+          <li><a href="blog.php">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <nav class="desktop-nav">
-    <ul class="list list__inline text-center">
-      <li><a href="about.php">About</a></li>
-      <li><a href="experience.php">Experience</a></li>
-      <li class="gap-right"><a href="research.php">Research</a></li>
-      <li class="gap-left"><a href="services.php">Services</a></li>
-      <li><a href="blog.php">Blog</a></li>
-      <li><a href="media.php">Media</a></li>
-    </ul>
-  </nav>
 </header>

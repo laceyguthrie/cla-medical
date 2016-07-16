@@ -1,19 +1,10 @@
-<section class="newsletter-bar">
+<section class="partners">
 	<div class="row">
-		<div class="small-12 medium-12 large-8 columns">
-			<p>52 weeks to greater business success and personal happiness. Sign up to receive our weekly 250 character info nugget.</p>
-		</div>
-		<div class="small-12 medium-12 large-4 columns">
-			<form class="light" id="newsletter-signup" method="post" name="newsletter-signup">
-	            <div class="row collapse">
-	              <div class="small-10 medium-9 columns">
-	                <input type="email" name="email" required placeholder="Email">
-	              </div>
-	              <div class="small-2 medium-3 columns">
-	                <button class="button small-button light" type="submit"><img src="assets/img/arrow.svg" alt="Submit" /></button>
-	              </div>
-	            </div>
-	      	</form>
+		<div class="small-12 medium-12 columns">
+			<ul class="partners list list__inline text-center">
+				<li><a href="#"><img src="assets/img/sony.png" alt="Sony" /></a></li>
+				<li><a href="#"><img src="assets/img/haag-streit.png" alt="Sony" /></a></li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -21,14 +12,17 @@
 <footer>
 	<div class="row">
 		<div class="small-12 medium-6 columns">
-			<img src="assets/img/footer-logo.svg" alt="Harp Family Institute" />
-			<p class="copyright">© 2016 Harp Family Institute</p>
+			<p class="copyright">© 2016 CLA Medical. All rights reserved.</p>
 		</div>
 		<div class="small-12 medium-6 columns">
-			<ul class="social">
-				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<ul class="social list list__inline">
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href="#"><img src="assets/img/sdvosb.png" /></a></li>
+				<li><a href="#"><img src="assets/img/bbb.png" /></a></li>
 			</ul>
 		</div>
 	</div>

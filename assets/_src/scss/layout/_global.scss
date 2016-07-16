@@ -8,67 +8,44 @@
 html,
 body {
   height: 100%;
-  background-color: $darkGray;
+  background-color: $white;
 }
 
 // Expand Site Wrap
 
 .row {
-  max-width: 960px;
+  max-width: 1060px;
   padding:0;
   &--centered {
     @include vertical-align();
+  }
+  &.block-row {
+    max-width:100%;
   }
 }
 
 // Header
 
 header {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
   width:100%;
-  padding:30px 0;
-  background-color: transparent;
+  padding:15px 0;
+  background-color: $white;
   z-index:9999;
-  .logo {
-    max-width:140px;
-    margin:0 auto;
-    position:relative;
-    z-index:999
-  }
 }
 
 .desktop-nav {
-  position:relative;
-  left:-30px;
-  top:-80px;
-  z-index:998;
+  margin-top:8px;
   li {
     font-size:14px;
-    font-weight:700;
+    font-weight:600;
+    color:$darkGray;
     text-transform:uppercase;
     margin-right:0;
     a {
       display:block;
       padding:18px;
     }
-    &.gap-right {
-      margin-right:124px;
-    }
-    &.gap-left {
-      margin-left:124px;
-    }
   }
-}
-
-.home-header {
-  color:$textGray;
-}
-
-.subpage-header nav li {
-  color:$white;
 }
 
 // Footer

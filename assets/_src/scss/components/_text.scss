@@ -16,7 +16,7 @@ a {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: $sans-serif;
-  color: $textGray;
+  color: $darkGray;
   font-weight: 700;
   letter-spacing:-.5px;
 }
@@ -25,21 +25,10 @@ h2 {
   text-align:center;
 }
 
-h3 {
-  margin-bottom:20px;
-}
-
-.subpage h2 {
-    width:200px;
-    margin:0 auto 50px auto;
-    padding:12px;
-    border:1px solid $textGray;
-}
-
 // Breakdown Headings
 
 h1 { @include font-size(30px); }
-h2 { @include font-size(28px); }
+h2 { @include font-size(24px); }
 h3 { @include font-size(20px); }
 h4 { @include font-size(18px); }
 h5 { @include font-size(15px); }
@@ -50,12 +39,12 @@ h6 { @include font-size(14px); }
 p, li {
   font-size:15px;
   font-family: $sans-serif;
-  color: #646464;
 }
 
 p {
     margin-bottom:20px;
     line-height: 180%;
+    color:$textGray;
 }
 
 .fancy-text {

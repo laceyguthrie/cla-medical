@@ -1,58 +1,23 @@
 // Heros
 
 .hero {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-color:$darkGray;
   text-align: center;
-  position: relative;
-  background-color: #fff;
-}
-
-.subpage .hero {
-  height:494px;
-}
-
-.home .hero {
-  padding:250px 0 630px 0;
-  background-image:url('../img/home-hero.jpg');
-  text-align:center;
-  p {
-    font-size:18px;
+  .image-block {
+    background-image:url('../img/hero-left.jpg');
   }
-  .fancy-text {
-    font-size:24px;
-    &:after {
-      content:'';
-      display:block;
-      width:70px;
-      height:2px;
-      background:$textGray;
-      margin:30px auto;
+  .text-block {
+    padding:140px 30px;
+    h2 {
+      color:$white;
+      font-size:24px;
+      max-width:360px;
+      margin:0 auto 10px auto;
+    }
+    p {
+      color:$white;
+      font-size:18px;
+      font-weight:300;
     }
   }
-}
-
-.about .hero {
-  background-image:url('../img/about-header.jpg');
-}
-
-.blog .hero {
-  background-image:url('../img/blog-header.jpg');
-}
-
-.experience .hero {
-  background-image:url('../img/experience-header.jpg');
-}
-
-.media .hero {
-  background-image:url('../img/media-header.jpg');
-}
-
-.research .hero {
-  background-image:url('../img/research-header.jpg');
-}
-
-.services .hero {
-  background-image:url('../img/services-header.jpg');
 }

@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-  $('.testimonial-slider').slick({
-      arrows:false,
-      dots:true,
-      autoplay:true,
-    });
-
   // Mobile Menu
   $('#menu-trigger').on('click', function(e) {
     e.preventDefault();
@@ -32,13 +26,45 @@ $(document).ready(function(){
 
   // Equalize testimonial heights
 
-  var maxHeight = 0;
+  equalheight = function(container){
 
-  $(".testimonial-container").each(function(){
-     if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  var currentTallest = 0,
+       currentRowStart = 0,
+       rowDivs = new Array(),
+       $el,
+       topPosition = 0;
+   $(container).each(function() {
+
+     $el = $(this);
+     $($el).outerHeight('auto')
+     topPostion = $el.position().top;
+
+     if (currentRowStart != topPostion) {
+       for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+         rowDivs[currentDiv].outerHeight(currentTallest);
+       }
+       rowDivs.length = 0; // empty the array
+       currentRowStart = topPostion;
+       currentTallest = $el.outerHeight();
+       rowDivs.push($el);
+     } else {
+       rowDivs.push($el);
+       currentTallest = (currentTallest < $el.outerHeight()) ? ($el.outerHeight()) : (currentTallest);
+    }
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].outerHeight(currentTallest);
+     }
+   });
+  }
+
+  $(window).load(function() {
+    equalheight('.block-row div');
   });
 
-  $(".testimonial-container").height(maxHeight);
+
+  $(window).resize(function(){
+    equalheight('.block-row div');
+  });
 
   // Super awesome event tracking for the win
   (function() {
