@@ -1,0 +1,73 @@
+// Calculate Rem
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+// Convert Font PX to Rem
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Breakpoint - Large Up
+@mixin large {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+// Breakpoint - Medium Up
+@mixin medium {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// Breakpoint - Tiny to Medium
+@mixin small {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+// Transition
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Vertically Align
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// Form Field Placeholders
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

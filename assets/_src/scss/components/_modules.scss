@@ -1,0 +1,442 @@
+// Modules
+
+.module {
+  padding: 70px 0;
+  position: relative;
+  &--white { background-color: $white; }
+  &--gray {
+    background:$bgGray;;
+  }
+  @include small {
+    padding: 25px 5px;
+  }
+ }
+
+ // Theme
+
+ .logos {
+ 	.row {
+ 		max-width:1120px;
+ 		li {
+	 		margin:15px;
+	 		img {
+	 			margin:0 auto;
+	 		}
+	 	}
+ 	}
+ }
+
+ .testimonials {
+ 	.testimonial-container {
+ 		position:relative;
+ 		display:flex;
+ 		padding:60px 30px;
+ 		border:1px solid $primary;
+ 		.testimonial {
+ 			margin:auto;
+	 		.quote {
+	 			font-size:14px;
+	 			font-style:italic;
+	 			margin-bottom:15px;
+	 		}
+	 		.citation {
+	 			font-weight:600;
+	 			font-size:12px;
+	 			text-transform:uppercase;
+	 		}
+	 		&:before {
+		 		content:url('../img/quote.svg');
+		 		display:block;
+		 		position:absolute;
+		 		top:0;
+		 		left:50%;
+		 		width:60px;
+		 		height:60px;
+		 		margin:-30px auto 0 -30px;
+		 		padding:18px;
+		 		background:$white;
+		 	}
+		}
+ 	}
+ }
+
+ // Page-Specific
+
+
+ // HOME
+
+	.home {
+	 h4 {
+	 	margin-bottom:30px;
+	 	text-align:center;
+	 }
+	 .summary {
+	 	margin-top:40px;
+	 	padding-top:50px;
+	 	border-top:1px solid $borderGray;
+	 	h3 {
+	 		font-size:18px;
+	 		text-align:left;
+	 		img {
+	 			height:30px;
+	 			display:inline-block;
+	 			margin-right:10px;
+	 			vertical-align:baseline;
+	 		}
+	 	}
+	 	.join-call {
+	 		padding-left:0;
+	 		padding-right:20px;
+	 	}
+	 	.hire-us {
+	 		padding-left:10px;
+	 		padding-right:10px;
+	 	}
+	 	.attend-workshop {
+	 		padding-left:20px;
+	 		padding-right:0;
+	 	}
+	}
+	.share-experience {
+		padding-bottom:0;
+	}
+	.logos {
+		padding:0;
+	}
+	.testimonial {
+		.quote {
+			font-size:22px!important;
+		}
+		.citation {
+			margin-top:50px;
+		}
+	}
+	.questions {
+		padding:30px 0;
+		li {
+			margin-bottom:15px;
+		}
+	}
+	.featured-by {
+		padding:30px 0 60px 0;
+	}
+}
+
+// ABOUT
+
+.about {
+	.about-trisha {
+		img {
+			margin:0 auto 30px auto;
+		}
+		.video-link {
+			color:$primary;
+			font-weight:600;
+			margin-top:30px;
+			img {
+				display:inline-block;
+				max-width:25px;
+				margin-right:10px;
+				margin-bottom:0;
+				position:relative;
+				top:-2px;
+			}
+		}
+	}
+	.take-away-value {
+		h4 {
+			color:#646464;
+			font-size:16px;
+			margin-bottom:10px;
+		}
+		p {
+			margin-bottom:30px;
+		}
+		li {
+			padding:8px 0;
+			counter-increment: step-counter;
+			&:before {
+				content: counter(step-counter);
+				display:inline-block;
+				width:28px;
+				height:28px;
+				@include border-radius(50%);
+				border:2px solid $primary;
+				color:$primary;
+				margin-right:10px;
+				font-size:16px;
+				font-weight:600;
+				text-align:center;
+			}
+		}
+		img {
+			margin:0 auto;
+		}
+	}
+	.advisory-board {
+		&.row {
+			max-width:1012px;
+		}
+		h3 {
+			font-size:18px;
+			text-align:center;
+			margin-bottom:50px;
+		}
+		.member {
+			margin-bottom:60px;
+			img {
+				margin:0 auto 20px auto;
+			}
+			.member-info {
+				height:80px;
+				text-align:center;
+				p {
+					margin-bottom:0;
+					font-size:14px;
+				}
+			}
+			.button {
+				margin:15px auto 0 auto;
+				display:block;
+			}
+		}
+	}
+	.testimonials {
+		padding-top:0;
+		.testimonial-container {
+			display:flex;
+			max-width:990px;
+			margin:0 auto;
+			.testimonial {
+				align-items:stretch;
+			}
+		}
+	}
+}
+
+// SERVICES
+
+.services {
+	.toolkit-container {
+		max-width:600px;
+		margin:30px auto 0 auto;
+		img {
+			margin:0 auto;
+		}
+		p {
+			font-weight:600;
+		}
+	}
+	.testimonials {
+		padding-top:50px;
+		.slick-track {
+			padding-top:30px;
+		}
+	}
+}
+
+// EXPERIENCE
+
+.experience  {
+	.button {
+		display:block;
+		margin:50px auto 0 auto;
+	}
+	.timeline-intro {
+		max-width:640px;
+		margin:0 auto;
+		text-align:center;
+		p {
+			font-weight:600;
+			color:$textGray;
+		}
+	}
+	.timeline-list {
+		max-width:285px;
+		margin:0 auto;
+		padding-left:40px;
+		border-left:1px solid #bbbbbb;
+		font-weight:600;
+		li {
+			margin:0;
+			padding:10px 0;
+			&:first-child {
+				padding-top:30px;
+			}
+			&:last-child {
+				padding-bottom:30px;
+			}
+		}
+		.year {
+			position:relative;
+			left:-50px;
+			margin-bottom:0;
+			color:$textGray;
+			&:before {
+				content:'';
+				display:inline-block;
+				position:relative;
+				top:5px;
+				width:20px;
+				height:20px;
+				@include border-radius(50%);
+				background:$primary;
+				margin-right:30px;
+			}
+		}
+		.business {
+			color:$primary;
+		}
+	}
+	.logo-container {
+	 	padding:25px;
+	 }
+}
+
+ // BLOG
+
+ .blog {
+	 .row {
+	 	max-width:1018px;
+	 }
+ }
+
+ .blog-list {
+ 	max-width:610px;
+ 	margin:0 auto;
+ 	li {
+ 		margin-bottom:70px;
+ 		background:$lightGray;
+		.blog-description {
+			padding:40px;
+		}
+		h3 {
+			font-size:20px;
+			margin-bottom:10px;
+			text-transform:uppercase;
+		}
+		small {
+			display:block;
+			margin-bottom:24px;
+			font-size:12px;
+			text-transform:uppercase;
+		}
+		p {
+			margin-bottom:60px;
+		}
+		.button {
+			margin:0;
+		}
+		&:last-child {
+			margin-bottom:0;
+		}
+ 	}
+ }
+
+ .blog-nav {
+ 	padding:30px 20px;
+ 	background:$lightGray;
+ 	h4 {
+ 		margin-bottom:15px;
+ 		font-size:16px;
+ 		text-transform:uppercase;
+ 	}
+ 	ul {
+ 		margin-bottom:40px;
+ 		li {
+ 			margin-bottom:15px;
+ 			font-size:14px;
+ 			a {
+ 				&:hover {
+ 					color:$primary;
+ 				}
+ 			}
+ 			&:last-child {
+ 				margin-bottom:0;
+ 			}
+ 		}
+ 	}
+ 	#search {
+ 		margin-bottom:30px;
+ 	}
+ }
+
+ // RESEARCH
+
+.research {
+	.research-intro {
+		text-align:center;
+		p {
+			max-width:740px;
+			margin:0 auto 30px auto;
+		}
+		.coming-soon {
+			margin:30px auto 0 auto;
+			h3 {
+				margin-bottom:0;
+				font-size:16px;
+				font-style:italic;
+			}
+			p {
+				max-width:590px;
+				margin:0 auto;
+				font-style:italic;
+			}
+		}
+	}
+	.sneak-peeks {
+		.row {
+			max-width:980px;
+		}
+		h3 {
+			margin-bottom:20px;
+			text-align:center;
+		}
+		h4 {
+			margin-bottom:10px;
+			font-size:16px;
+		}
+		p {
+			font-size:14px;
+		}
+		img {
+			margin:0 auto 30px auto;
+		}
+	}
+}
+
+// MEDIA
+
+.media {
+	h3 {
+		margin-bottom:30px;
+		text-align:center;
+	}
+	.media-title {
+		height:100px;
+		margin-bottom:20px;
+	}
+	.videos {
+		margin-bottom:60px;
+		a {
+			position:relative;
+			&:after {
+				content: "\f144";
+				font-family: FontAwesome;
+    			font-style: normal;
+    			font-weight: normal;
+    			font-size:30px;
+    			text-decoration: inherit;
+				position:absolute;
+				bottom:0;
+				left:0;
+				margin:0 10px;
+				color:$white;
+				z-index:99;
+			}
+		}
+	}
+}
+
+
+

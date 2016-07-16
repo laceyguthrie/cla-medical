@@ -1,0 +1,33 @@
+// Lists are rad, yo.
+
+.list, ul, ol {
+
+  font-family: $sans-serif;
+  list-style-type: none;
+  margin-left:0;
+
+  // Inline
+  &__inline {
+    margin: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include small {
+        display: block;
+        margin-right: 0;
+        margin: 30px 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}

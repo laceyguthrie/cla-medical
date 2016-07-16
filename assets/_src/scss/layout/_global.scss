@@ -1,0 +1,175 @@
+// Utility
+
+* { font-family: $sans-serif; }
+*:focus { outline: none; }
+
+// HTML & Body
+
+html,
+body {
+  height: 100%;
+  background-color: $darkGray;
+}
+
+// Expand Site Wrap
+
+.row {
+  max-width: 960px;
+  padding:0;
+  &--centered {
+    @include vertical-align();
+  }
+}
+
+// Header
+
+header {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  padding:30px 0;
+  background-color: transparent;
+  z-index:9999;
+  .logo {
+    max-width:140px;
+    margin:0 auto;
+    position:relative;
+    z-index:999
+  }
+}
+
+.desktop-nav {
+  position:relative;
+  left:-30px;
+  top:-80px;
+  z-index:998;
+  li {
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-right:0;
+    a {
+      display:block;
+      padding:18px;
+    }
+    &.gap-right {
+      margin-right:124px;
+    }
+    &.gap-left {
+      margin-left:124px;
+    }
+  }
+}
+
+.home-header {
+  color:$textGray;
+}
+
+.subpage-header nav li {
+  color:$white;
+}
+
+// Footer
+
+.newsletter-bar {
+  padding:45px 30px;
+  background-color:$primary;
+  .row {
+    max-width:945px;
+  }
+  p {
+    color:$white;
+    margin-bottom:0;
+    font-weight:600;
+    max-width:510px;
+  }
+  form {
+    max-width:310px;
+    margin:0 auto;
+    float:right;
+  }
+}
+footer {
+  padding:25px 30px;
+  background-color:#000039;
+  .row {
+    max-width:945px;
+  }
+  p, li {
+    color:$white;
+  }
+  img {
+    width:50px;
+    display:inline-block;
+    margin-right:10px;
+  }
+  .copyright {
+    display:inline-block;
+    margin-top:16px;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:11px;
+  }
+  .social {
+    margin-top:14px;
+    float:right;
+    li {
+      display:inline-block;
+      margin:0;
+      a {
+        padding:10px;
+      }
+    }
+  }
+}
+
+// Images
+
+img {
+	display:block;
+	max-width:100%;
+  max-height:100%;
+}
+
+// Hide Mobile-only
+
+.small-glass {
+  display:none;
+}
+
+#mobile-menu {
+  display:none;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:120px 40px;
+  background:$darkGray;
+  z-index:999998;
+  a {
+    display:block;
+    padding:10px;
+    text-align:center;
+    font-weight:700;
+    font-size:18px;
+    text-transform:uppercase;
+    color:$white;
+  }
+}
+
+#menu-trigger {
+  display:none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2px 10px;
+  margin:10px;
+  border-radius:3px;
+  background:$darkGray;
+  font-size: 20px;
+  z-index:999999;
+  color:$white;
+}

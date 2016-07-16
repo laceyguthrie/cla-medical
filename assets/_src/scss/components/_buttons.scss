@@ -1,0 +1,53 @@
+// Buttons
+
+.button, button {
+  max-width:100%;
+  @include border-radius(0);
+  font-weight: 600;
+  font-size: 14px;
+  margin: 12px;
+  padding: 18px;
+  width:248px;
+  font-family: $sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+  &:hover, &:focus { outline: none; }
+  &.primary {
+    border: 1px solid $primary;
+    @include border-radius(5px);
+    background-color: transparent;
+    color: $primary;
+    &:hover, &:focus {
+      border-color: $primary;
+      color: #fff;
+      background-color: $primary;
+    }
+  }
+  &.small-button {
+    border: none;
+    background-color: $primary;
+    color: $white;
+    margin:0;
+    padding:15px 12px;
+    width:auto;
+    img {
+      display:block;
+      width:15px;
+    }
+    &:hover, &:focus {
+      background-color: lighten($primary, 5%);
+      color: $white;
+    }
+    &.light {
+      background-color:$white;
+      color:$primary;
+    }
+    &.thick {
+      padding:18px;
+      width:100%;
+    }
+  }
+  @include small {
+    font-size: 12px;
+  }
+}

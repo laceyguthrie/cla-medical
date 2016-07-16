@@ -1,0 +1,87 @@
+// Form Fields
+
+form {
+  margin-top: 15px;
+  @include placeholder {
+    color: #646464;
+  }
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="search"],
+textarea,
+select {
+  @include border-radius(0);
+  box-shadow: none;
+  font-family: $sans-serif;
+  border: 1px solid $primary;
+  height: auto;
+  padding: 10.5px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: $textGray;
+  &:hover, &:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+  }
+  &:focus {
+    border-color: $primary;
+  }
+}
+
+form.light {
+  input[type="text"],
+  input[type="phone"],
+  input[type="email"],
+  input[type="search"],
+  textarea,
+  select {
+    border: 1px solid $white;
+    color: $white;
+    background-color:transparent;
+    &:hover, &:focus {
+      background-color: #transparent;
+    }
+    &:focus {
+      border-color: $white;
+    }
+  }
+  @include placeholder {
+    color: $white;
+  }
+}
+
+form.sidebar-form {
+  input[type="text"],
+  input[type="phone"],
+  input[type="email"],
+  input[type="search"],
+  textarea,
+  select {
+    border: none;
+    color: #646464;
+    text-transform:uppercase;
+    background-color:$bgGray;
+    padding:18px;
+    font-size:12px;
+    &:hover, &:focus {
+      background-color:$bgGray;
+    }
+    &:focus {
+      border-color: $white;
+    }
+  }
+  @include placeholder {
+    color: #646464;
+  }
+}
+
+// Textarea Hack
+
+textarea {
+  resize: none;
+  height: 150px;
+}
