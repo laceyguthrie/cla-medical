@@ -40,7 +40,7 @@
     &.open-blue {
       border-color:$primary;
       color:$primary;
-      &:hover {
+      &:hover, &:focus {
         color:$white;
       }
     }
