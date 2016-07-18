@@ -1,7 +1,7 @@
 <section class="partners">
 	<div class="row">
 		<div class="small-12 medium-12 columns">
-			<ul class="partners list list__inline text-center">
+			<ul class="list list__inline text-center">
 				<li><a href="#"><img src="assets/img/sony.png" alt="Sony" /></a></li>
 				<li><a href="#"><img src="assets/img/haag-streit.png" alt="Sony" /></a></li>
 			</ul>

@@ -30,7 +30,7 @@ h2 {
 h1 { @include font-size(30px); }
 h2 { @include font-size(24px); }
 h3 { @include font-size(20px); }
-h4 { @include font-size(18px); }
+h4 { @include font-size(20px); }
 h5 { @include font-size(15px); }
 h6 { @include font-size(14px); }
 
@@ -45,11 +45,4 @@ p {
     margin-bottom:20px;
     line-height: 180%;
     color:$textGray;
-}
-
-.fancy-text {
-	font-family:$fancy-text;
-  font-style:italic;
-  font-size:22px;
-  text-align:center;
 }

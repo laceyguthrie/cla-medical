@@ -10,6 +10,7 @@
 
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/style.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
   <script src="https://use.typekit.net/mju2uza.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -25,9 +26,9 @@
     <nav class="mobile-nav">
       <ul class="list">
         <li><a href="about.php">About</a></li>
-        <li><a href="experience.php">What We Offer</a></li>
-        <li><a href="research.php">Videos</a></li>
-        <li><a href="services.php">Events</a></li>
+        <li><a href="#">What We Offer</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Events</a></li>
         <li><a href="blog.php">Blog</a></li>
       </ul>
     </nav>

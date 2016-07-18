@@ -9,7 +9,7 @@
       <div class="medium-6 columns text-block">
         <h2>Your Surgical Microscope and 2D/3D HD Video Source</h2>
         <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <a href="#" class="button open">Contact</a>
+        <a href="#" class="button open open-blue">Contact</a>
       </div>
     </div>
   </section>
@@ -53,7 +53,7 @@
         <div class="row">
           <div class="small-12 medium-6 columns">
             <img src="assets/img/microscope.png" />
-            <h4>Haag-Streit Surgical Microscopes</h4>
+            <h4>Haag-Streit<br />Surgical Microscopes</h4>
             <p>Donec ullamcorper nulla non metus fringilla. Sociis natoque penatibus et magnis dis parturient montes.</p>
             <a href="#" class="button primary">Learn More</a>
           </div>
@@ -76,4 +76,6 @@
 
 </section>
 
-<?php include( 'partials/footer.php' ); ?>
+<div class="home-footer">
+  <?php include( 'partials/footer.php' ); ?>
+</div>

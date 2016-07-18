@@ -1,167 +1,74 @@
 @media only screen 
-and (max-width:1024px) {
-	.home .summary .join-call {
-		padding:20px;
-	}
-	.home .summary .hire-us {
-		padding:20px;
-	}
-	.home .summary .attend-workshop {
-		padding:20px;
-	}
-	.newsletter-bar p {
-		text-align:center;
-		margin:0 auto 30px auto;
-	}
-	.newsletter-bar form {
-		float:none;
-	}
-	.about .video-link {
-		text-align:center;
-	}
-	.take-away-value {
-		h3 {
-			text-align:center;
-		}
-		p {
-			text-align:center;
-		}
-		h4 {
-			text-align:center;
-			margin-top:30px;
-		}
-		ol {
-			max-width:640px;
-			margin:0 auto 30px auto;
-		}
-	}
-	.about .advisory-board.row {
-		max-width:640px;
-	}
-	.testimonials .testimonial-container {
-		margin-bottom:60px;
-	}
-	.mobile-tabs {
-		display:block;
-	}
-	.slick-dots {
-		margin-top:0;
-	}
-	.blog-list {
-		float:none;
-	}
-	.blog-nav {
-		max-width: 580px;
-	    margin: 30px auto;
-	    text-align:center;
-	    &.column:last-child:not(:first-child), &.columns:last-child:not(:first-child) {
-	    	float:none;
-	    }
-	}
-}
-
-@media only screen 
-and (max-width:980px) {
+and (max-width:960px) {
 	.desktop-nav {
-		top:auto;
-		left:auto;
-		margin-top:10px;
-		li {
-			a {
-				padding:15px;
-			}
-			&.gap-right {
-		      margin-right:0px;
-		    }
-		    &.gap-left {
-		      margin-left:0px;
-		    }
+		li a {
+			padding:7.5px;
 		}
 	}
 }
 
 @media only screen 
-and (max-width:940px) {
-	.logos .row li {
-		height:80px;
-		margin:10px;
+and (max-width:740px) {
+	.desktop-nav {
+		text-align:right;
 	}
-	.desktop-tabs {
-		display:none;
+	.container .inner-container {
+		padding:60px 30px;
 	}
-	.mobile-tabs {
+	.what-we-offer h4 {
+		font-size:16px;
+	}
+	footer .column, footer .columns {
 		display:block;
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	footer .list__inline {
+	    text-align: center;
+    	float: none;
+    	display: block;
+    	li {
+    		float:none;
+    		display:inline-block;
+    		i {
+    			top:-20px;
+    		}
+    	}
+	}
+	.blog .container .inner-container {
+		padding:15px;
+	}
+	.blog-list li .blog-description {
+		padding:25px;
 	}
 }
 
 @media only screen 
 and (max-width:640px) {
-	header .logo {
-		max-width:180px;
-		margin-top:40px;
-	}
-	.home .hero .fancy-text {
-		font-size:20px;
-	}
-	.subpage .hero {
-		height:280px;
-	}
 	#menu-trigger {
 		display:block;
 	}
 	.desktop-nav {
 		display:none;
 	}
-	.logos .row li {
-		height:auto;
-		margin:0;
-	}
-	.about .take-away-value ol {
+	.video-bar {
 		text-align:center;
-		li:before {
-			display:block;
-			margin-bottom:15px;
+		p {
+			margin-bottom:20px;
 		}
 	}
-	.about .take-away-value li {
-		margin-bottom:30px;
-		&:before {
-			display:block;
-			margin:0 auto 15px auto;
-			text-align:center;
+	.what-we-offer div {
+		margin-bottom:40px;
+		h4 {
+			font-size:20px;
 		}
 	}
-	.services .toolkit-container p {
-		text-align:center;
-		margin-top:30px;
+	.partners img {
+		margin:0 auto;
 	}
-	.services {
-		#toolkit-request {
-			max-width:300px;
-			margin:0 auto;
-		}
-	}
-	.sneak-peeks {
-		text-align:center;
-		.columns {
-			margin-bottom:30px;
-		}
-	}
-	.testimonials {
-		padding:60px 30px 30px 30px;
-	}
-	footer img {
-		display:block;
-		width:80px;
-		margin:30px auto;
-	}
-	footer .copyright {
-		display:block;
-		text-align:center;
-	}
-	footer .social {
-		float:none;
-		margin-top:20px;
-		text-align:center;
+	.blog-nav #search .button {
+		margin:0 auto;
+		width:100%;
 	}
 }
